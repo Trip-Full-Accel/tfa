@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "../components/main";
 import Maps from "../components/Maps";
 import Template from "../components/template";
-import Main from "../components/main";
-import TripStart from "../components/tripStart";
 import TfaInfo from "../components/tfaInfo";
+import TripStart from "../components/tripStart";
 
 const MyRoute = () => {
   return (

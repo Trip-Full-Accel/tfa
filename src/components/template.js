@@ -1,8 +1,6 @@
 import { Outlet } from "react-router-dom";
-import { Container } from "reactstrap";
 import Footer from "./footer";
 import Header from "./header";
-import AutoPlay from "./slide/slider";
 
 const Template = () => {
   return (

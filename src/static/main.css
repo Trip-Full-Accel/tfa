@@ -56,7 +56,10 @@
   top: 0;
   height: 490%;
   width: 140%;
-  background: #78c7d2;
+  /* background: #78c7d2; */
+  /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+  /* background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%); */
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);

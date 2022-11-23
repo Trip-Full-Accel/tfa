@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router-dom";
-import { CloseButton, Modal } from "reactstrap";
+import { Button, CloseButton, Modal } from "reactstrap";
 import Topbtn from "./topbtn";
 function NavBar() {
   const [modal, setModal] = useState(false);
@@ -102,13 +102,24 @@ function NavBar() {
               </Nav.Link>
               <Nav.Link
                 onClick={() => {
-                  linkTo("/tripstart");
+                  linkTo("/maps");
                 }}
               >
                 여행가기
                 {/* <Link to="/tripstart">여행가기</Link> */}
               </Nav.Link>
-              <Nav.Link onClick={toggle}>Join Us</Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  linkTo("/maps");
+                }}
+              >
+                Join Us
+              </Nav.Link>
+
+              {/* 사이드바 실험 */}
+              {/* <Button onClick={toggle}>
+                <ion-icon name="menu-outline"></ion-icon>
+              </Button> */}
             </Nav>
           </Container>
 
@@ -173,7 +184,7 @@ function NavBar() {
                       <a onClick={() => ocultar_login_sign_up()}>
                         {/* <i
                           class="material-icons"
-                          style={{ textDecoration: "none", cursor: "pointer" }}
+                          style={{ textDecoration: "none", cursor: "`poin`ter" }}
                         >
                           back
                         </i> */}

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
+// import { useState, useNavigate } from "react";
 
 export default class AutoPlay extends Component {
   render() {
@@ -9,10 +11,19 @@ export default class AutoPlay extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+      speed: 3000,
+      autoplaySpeed: 3000,
       cssEase: "linear",
     };
+
+    // const [coordinate, setCoordinate] = useState();
+
+    // const navigate = useNavigate();
+    // const plz = (e) => {
+    //   setCoordinate(e);
+    //   console.log(coordinate);
+    // };
+
     return (
       <div
         className="silder-wrap"
@@ -48,7 +59,7 @@ export default class AutoPlay extends Component {
             </div>
           </Slider>
           <br></br>
-          <h2>부산</h2>
+          <h2>Busan</h2>
         </div>
         {/* 대전 */}
 
@@ -76,7 +87,7 @@ export default class AutoPlay extends Component {
             </div>
           </Slider>
           <br></br>
-          <h2>대전</h2>
+          <h2>Daejeon</h2>
         </div>
         {/* 서울 */}
 
@@ -88,23 +99,23 @@ export default class AutoPlay extends Component {
         >
           <Slider {...settings}>
             <div>
-              <img src="/img/daejeon/daejeon1.jpeg" />
+              <img src="/img/seoul/seoul1.jpg" />
             </div>
             <div>
-              <img src="/img/daejeon/daejeon2.jpeg" />
+              <img src="/img/seoul/seoul2.jpg" />
             </div>
             <div>
-              <img src="/img/daejeon/daejeon3.jpeg" />
+              <img src="/img/seoul/seoul3.jpg" />
             </div>
             <div>
-              <img src="/img/daejeon/daejeon4.jpeg" />
+              <img src="/img/seoul/seoul4.jpg" />
             </div>
             <div>
-              <img src="/img/daejeon/daejeon5.jpeg" />
+              <img src="/img/seoul/seoul5.jpg" />
             </div>
           </Slider>
           <br></br>
-          <h2>서울</h2>
+          <h2>Seoul</h2>
         </div>
         {/* 대구 */}
 
@@ -116,26 +127,25 @@ export default class AutoPlay extends Component {
         >
           <Slider {...settings}>
             <div>
-              <img src="/img/daejeon/daejeon1.jpeg" />
+              <img src="/img/daegu/daegu1.jpg" />
             </div>
             <div>
-              <img src="/img/daejeon/daejeon2.jpeg" />
+              <img src="/img/daegu/daegu2.jpg" />
             </div>
             <div>
-              <img src="/img/daejeon/daejeon3.jpeg" />
+              <img src="/img/daegu/daegu3.jpg" />
             </div>
             <div>
-              <img src="/img/daejeon/daejeon4.jpeg" />
+              <img src="/img/daegu/daegu4.jpg" />
             </div>
             <div>
-              <img src="/img/daejeon/daejeon5.jpeg" />
+              <img src="/img/daegu/daegu5.jpg" />
             </div>
           </Slider>
           <br></br>
-          <h2>대구</h2>
+          <h2>Daegu</h2>
         </div>
         {/* 강릉 */}
-        {/* 강릉, 대구, 대전, 부산  서울- 서울 제주 전주 광주 */}
         <div
           className="강릉"
           style={{
@@ -160,7 +170,7 @@ export default class AutoPlay extends Component {
             </div>
           </Slider>
           <br></br>
-          <h2>강릉</h2>
+          <h2>Gangneung</h2>
         </div>
 
         {/* 제주 */}
@@ -188,7 +198,7 @@ export default class AutoPlay extends Component {
             </div>
           </Slider>
           <br></br>
-          <h2>제주</h2>
+          <h2>Jeju</h2>
         </div>
 
         {/* 전주 */}
@@ -216,7 +226,7 @@ export default class AutoPlay extends Component {
             </div>
           </Slider>
           <br></br>
-          <h2>전주</h2>
+          <h2>Jeonju</h2>
         </div>
         {/* 광주 */}
         <div
@@ -243,7 +253,7 @@ export default class AutoPlay extends Component {
             </div>
           </Slider>
           <br></br>
-          <h2>광주</h2>
+          <h2>gwangju</h2>
         </div>
       </div>
     );

@@ -1,11 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Map, MapMarker, Polyline } from "react-kakao-maps-sdk";
 // import { coordinate } from "";
 // import Main from "./main";
 // import { coordinate } from "./main.js";
 import { useLocation } from "react-router-dom";
-import { useState } from "react";
-import { Button } from "reactstrap";
 import "../static/Maps.css";
 /*global kakao*/
 

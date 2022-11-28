@@ -5,7 +5,7 @@ import swal from "sweetalert";
 import "../static/login.css";
 import "../static/main.css";
 import "../static/mainGoToMap.css";
-import AutoPlay from "./slide/slider";
+import AutoPlay from "./slide/Slider";
 
 const tripMessage = () => {
   swal("여행갈래요?");

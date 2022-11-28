@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router-dom";
 import { Button, CloseButton, Modal } from "reactstrap";
-import Topbtn from "./topbtn";
+import Topbtn from "./Topbtn";
 function NavBar() {
   const [modal, setModal] = useState(false);
 

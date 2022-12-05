@@ -2,9 +2,9 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
-import UserInfo from "./myPage/UserInfo";
-import TravelRoute from "./myPage/TravelRoute";
-import TravelCost from "./myPage/TravelCost";
+import UserInfo from "./MyPage/UserInfo";
+import TravelRoute from "./MyPage/TravelRoute";
+import TravelCost from "./MyPage/TravelCost";
 const MyPage = () => {
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">

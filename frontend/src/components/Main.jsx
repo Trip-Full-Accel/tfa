@@ -68,7 +68,7 @@ const Main = () => {
             muted
             className="main-video"
             src="./video/seoul_intro.mp4"
-            autoplay="autoplay"
+            autoPlay="autoplay"
             loop
           ></video>
           {/* <img src="http://vision21.kr/data/photos/mig/20180517/art_5ea786450619ccd294a8fd8412b6a46e.jpg"></img> */}

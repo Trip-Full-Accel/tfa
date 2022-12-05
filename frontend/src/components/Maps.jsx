@@ -183,7 +183,7 @@ const Maps = () => {
         {travelPoint.map((el) => {
           // console.log(el.name, el.city, el.x, el.y);
           return (
-            <div>
+            <div key={el.name}>
               <div className="list-group list-group-flush border-bottom scrollarea">
                 <a
                   href="#"

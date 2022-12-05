@@ -3,9 +3,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router-dom";
-import { Button, CloseButton, Modal } from "reactstrap";
+import { CloseButton, Modal } from "reactstrap";
 import Topbtn from "./Topbtn";
-function NavBar() {
+function Header() {
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
@@ -119,12 +119,12 @@ function NavBar() {
 
           {/* modal code */}
           <Modal isOpen={modal} toggle={toggle} external={externalCloseBtn}>
-            <div class="cotn_principal">
-              <div class="cont_centrar">
-                <div class="cont_login">
-                  <div class="cont_info_log_sign_up">
-                    <div class="col_md_login">
-                      <div class="cont_ba_opcitiy">
+            <div className="cotn_principal">
+              <div className="cont_centrar">
+                <div className="cont_login">
+                  <div className="cont_info_log_sign_up">
+                    <div className="col_md_login">
+                      <div className="cont_ba_opcitiy">
                         <h2>LOGIN</h2>
                         <p>
                           Welcome Back
@@ -132,15 +132,15 @@ function NavBar() {
                           To TRIP FULL ACCEL!
                         </p>
                         <button
-                          class="btn_login"
+                          className="btn_login"
                           onClick={() => cambiar_login()}
                         >
                           LOGIN
                         </button>
                       </div>
                     </div>
-                    <div class="col_md_sign_up">
-                      <div class="cont_ba_opcitiy">
+                    <div className="col_md_sign_up">
+                      <div className="cont_ba_opcitiy">
                         <h2>SIGN UP</h2>
 
                         <p>
@@ -150,7 +150,7 @@ function NavBar() {
                         </p>
 
                         <button
-                          class="btn_sign_up"
+                          className="btn_sign_up"
                           onClick={() => cambiar_sign_up()}
                         >
                           SIGN UP
@@ -159,22 +159,22 @@ function NavBar() {
                     </div>
                   </div>
 
-                  <div class="cont_back_info">
-                    <div class="cont_img_back_grey">
+                  <div className="cont_back_info">
+                    <div className="cont_img_back_grey">
                       <img
                         src="https://cdn.mediayonhap.com/news/photo/202101/50659_40673_158.jpg"
                         alt=""
                       />
                     </div>
                   </div>
-                  <div class="cont_forms">
-                    <div class="cont_img_back_">
+                  <div className="cont_forms">
+                    <div className="cont_img_back_">
                       <img
                         src="https://cdn.mediayonhap.com/news/photo/202101/50659_40673_158.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="cont_form_login">
+                    <div className="cont_form_login">
                       <a onClick={() => ocultar_login_sign_up()}>
                         {/* <i
                     class="material-icons"
@@ -187,12 +187,15 @@ function NavBar() {
                       <h2>LOGIN</h2>
                       <input type="text" placeholder="Email" />
                       <input type="password" placeholder="Password" />
-                      <button class="btn_login" onClick={() => cambiar_login()}>
+                      <button
+                        className="btn_login"
+                        onClick={() => cambiar_login()}
+                      >
                         LOGIN
                       </button>
                     </div>
 
-                    <div class="cont_form_sign_up">
+                    <div className="cont_form_sign_up">
                       <a onClick={() => ocultar_login_sign_up()}>
                         {/* <i class="material-icons">back</i><</> */}
                         <CloseButton />
@@ -203,7 +206,7 @@ function NavBar() {
                       <input type="password" placeholder="Password" />
                       <input type="password" placeholder="Confirm Password" />
                       <button
-                        class="btn_sign_up"
+                        className="btn_sign_up"
                         onClick={() => cambiar_sign_up()}
                       >
                         SIGN UP
@@ -222,4 +225,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Header;

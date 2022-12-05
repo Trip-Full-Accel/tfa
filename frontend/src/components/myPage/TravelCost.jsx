@@ -31,9 +31,8 @@ const TravelCost = () => {
         value={number}
         onChange={(e) => setNumber(parseInt(e.target.value))}
         step="1000"
-      >
-        비용
-      </input>
+      />
+
       <input
         type="member"
         value={member}

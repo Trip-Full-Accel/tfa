@@ -104,8 +104,12 @@ const Maps = () => {
       <h1>plan your trip</h1>
 
       <div id="left">
-        {addr.map((el) => {
-          return <div key={1}>{el.name}</div>;
+        {addr.map((el, i) => {
+          return (
+            <div key={el.name}>
+              {i + 1}번째 여행지 {el.name}
+            </div>
+          );
         })}
       </div>
       <div id="center">

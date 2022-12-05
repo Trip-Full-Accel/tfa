@@ -60,7 +60,6 @@ function NavBar() {
       document.querySelector(".cont_form_login").style.display = "none";
     }, 500);
   }
-
   const navigate = useNavigate();
 
   const linkTo = (path) => {
@@ -106,20 +105,15 @@ function NavBar() {
                 }}
               >
                 여행가기
-                {/* <Link to="/tripstart">여행가기</Link> */}
               </Nav.Link>
               <Nav.Link
                 onClick={() => {
-                  linkTo("/maps");
+                  linkTo("/myPage");
                 }}
               >
-                Join Us
+                마이페이지
               </Nav.Link>
-
-              {/* 사이드바 실험 */}
-              {/* <Button onClick={toggle}>
-                <ion-icon name="menu-outline"></ion-icon>
-              </Button> */}
+              <Nav.Link onClick={toggle}>Join Us</Nav.Link>
             </Nav>
           </Container>
 
@@ -183,11 +177,11 @@ function NavBar() {
                     <div class="cont_form_login">
                       <a onClick={() => ocultar_login_sign_up()}>
                         {/* <i
-                          class="material-icons"
-                          style={{ textDecoration: "none", cursor: "`poin`ter" }}
-                        >
-                          back
-                        </i> */}
+                    class="material-icons"
+                    style={{ textDecoration: "none", cursor: "`poin`ter" }}
+                  >
+                    back
+                  </i> */}
                         <CloseButton />
                       </a>
                       <h2>LOGIN</h2>
@@ -220,6 +214,7 @@ function NavBar() {
               </div>
             </div>
           </Modal>
+
           <Topbtn></Topbtn>
         </Navbar>
       </>
